@@ -1,0 +1,51 @@
+The math teacher, Mr. Johnson, is preparing students for an upcoming Math Olympics competition, and he wants to create study groups to foster collaborative learning. Mr. Johnson seeks your assistance in automating the process of dividing students into equal-sized teams, taking into account any remaining students who can assist with additional math challenges. Can you provide a program that takes the total number of students and the desired number of study groups as input and outputs the number of students in each study group along with the count of remaining students?
+
+Input Format
+
+The total number of students in the class. The desired number of study groups.
+
+Constraints
+
+Null
+
+Output Format
+
+The number of students in each study group. The count of remaining students.
+
+Sample Input 0
+
+50
+6
+Sample Output 0
+
+The number of students in each team is 8 and left out is 2
+Sample Input 1
+
+60
+7
+Sample Output 1
+
+The number of students in each team is 8 and left out is 4
+Sample Input 2
+
+75
+9
+Sample Output 2
+
+The number of students in each team is 8 and left out is 3
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        int r=n1%n2;
+        int q=n1/n2;
+        System.out.print("The number of students in each team is "+q+" and left out is "+r);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
